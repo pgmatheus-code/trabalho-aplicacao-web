@@ -1,0 +1,52 @@
+h1 {
+    color: darkgray;
+}
+
+h2 {
+    color: lightgrey;
+}
+
+table {
+    color: darkgray;
+}
+
+body {
+    background-color: black;
+}
+
+.centered {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-interativo {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.btn-desativado {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #676767;
+  color: #787878;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+/* Efeito ao passar o mouse */
+.btn-interativo:hover {
+  background-color: #0056b3;
+}
+
+/* Efeito ao clicar */
+.btn-interativo:active {
+  transform: scale(0.98);
+}
