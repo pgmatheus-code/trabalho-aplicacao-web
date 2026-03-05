@@ -16,10 +16,12 @@ function send(){
     if (nameField.value == "") // testa o nome para nulo
     {
         warningLabel.textContent = "O campo nome está vazio.";
+        warningLabel.classList.replace("success-label", "warning-label");
     }
     else if (!validateEmail(emailField.value)) // valida o email
     {
-        warningLabel.textContent = "E-mail inválido.";
+        warningLabel.textContent = "E-mail "+emailField.value+" inválido.";
+        warningLabel.classList.replace("success-label", "warning-label");
     }
     else if (messageField.value.trim() === "") // testa a mensagem para nulo
     {
@@ -27,10 +29,12 @@ function send(){
         // para apagar espaços em branco e também usei o operador === (idêntico) para
         // fazer uma comparação exata
         warningLabel.textContent = "O conteúdo da mensagem não pode ser vazio.";
+        warningLabel.classList.replace("success-label", "warning-label");
     }
-    else // se passou, apaga todos os campos
+    else // se passou, apaga os campos e exibe a mensagem de sucesso
     {        
-        warningLabel.textContent = "";
+        warningLabel.textContent = "Mensagem enviada!";
+        warningLabel.classList.replace("warning-label", "success-label");
         nameField.value = "";
         emailField.value = "";
         messageField.value = "";        

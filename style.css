@@ -1,21 +1,21 @@
+/* estilo em elementos básicos ----------------------------------------------------------------*/
 h1, h2, h3, p, label {
-    color: lightgrey;
+  color: lightgrey;
+}
+
+p {
+  text-align: justify;
 }
 
 table {
-    color: darkgray;
+  color: darkgray;
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
-.centered {
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
+/* link button -------------------------------------------------------------------------------*/
 .link-button {
   display: inline-block;
   padding: 10px 20px;
@@ -37,16 +37,15 @@ body {
   font-family: sans-serif;
 }
 
-/* ao passar o mouse */
 .link-button:hover {
   background-color: #0056b3;
 }
 
-/* ao clicar */
 .link-button:active {
   transform: scale(0.98);
 }
 
+/* imagens -----------------------------------------------------------------------------------*/
 .centered-circle-image {
   max-width: fit-content;
   margin-left: auto;
@@ -82,10 +81,7 @@ body {
   opacity: 0.8;
 }
 
-.sem-quebra {
-  display: inline; /* Ou inline-block */
-}
-
+/* formulário ----------------------------------------------------------------------------*/
 .input-field{
   max-width: fit-content;
   margin-left: auto;
@@ -101,17 +97,11 @@ body {
   justify-content: center;
 }
 
-.row{
+.success-label{
+  background-color: rgb(0, 109, 16);
+  color: white;
   display: flex;
-  gap: 20px;
-}
-
-.container{
-  margin: 0% 10% 0% 10%;
-}
-
-.center{
-  text-align: center;
+  justify-content: center;
 }
 
 .row-form{
@@ -128,4 +118,28 @@ body {
   width: 100%;
   background-color: rgb(47, 47, 47);
   color: lightgray;
+}
+
+/* outros ----------------------------------------------------------------------------------*/
+.row{
+  display: flex;
+  gap: 20px;
+}
+
+.no-wrap {
+  display: inline; /* Ou inline-block */
+}
+
+.container{
+  margin: 0% 10% 0% 10%;
+}
+
+.center{
+  text-align: center;
+}
+
+.centered {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
