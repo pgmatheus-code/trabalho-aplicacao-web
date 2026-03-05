@@ -5,19 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
         <title>Contato</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <!-- menu fixo no topo -->
         <br>
-        <table class="centered">
-            <tr>
-                <td><a href="sobre.html" class="btn-interativo" role="button">Sobre mim</a></td>
-                <td><a href="formacao.html" class="btn-interativo" role="button">Formação</a></td>
-                <td><a href="portfolio.html" class="btn-interativo" role="button">Portfólio</a></td>
-                <td><p class="btn-desativado" role="button">Contato</p></td>
-            </tr>
-        </table>
-        
+        <nav>
+            <table class="centered">
+                <tr>
+                    <td><a href="sobre.html" class="link-button" role="button">Sobre mim</a></td>
+                    <td><a href="formacao.html" class="link-button" role="button">Formação</a></td>
+                    <td><a href="portfolio.html" class="link-button" role="button">Portfólio</a></td>
+                    <td><p class="inactive-link-button" role="button">Contato</p></td>
+                </tr>
+            </table>
+        </nav>
+        <!-- conteúdo principal -->
         <main>
             <form class="centered" action="" method="">
                 <table class="centered">
@@ -28,24 +31,37 @@
                     </tr>
 
                     <tr>
+                        <td colspan="2">
+                            <h3 class="warning-label" id="warning-label"></h3>
+                        </td>
+                    </tr>
+
+                    <tr>
                         <th><label>Nome: </label></th>
-                        <td><input type="text" id="name_field"
+                        <td><input class="input-field" type="text" id="name-field"
                             style="width: 800px; padding: 5px;">
                         </td>
                     </tr>
 
                     <tr>
                         <th><label>E-mail: </label></th>
-                        <td><input type="email" id="email_field"
+                        <td><input class="input-field" type="email" id="email-field"
                             style="width: 800px; padding: 5px;">
                         </td>
                     </tr>
 
                     <tr>
                         <th><label>Mensagem: </label></th>
-                        <td><textarea id="message_field"
+                        <td><textarea class="input-field" id="message-field"
                             style="width: 800px; height: 300px; padding: 5px;">
                         </textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button class="link-button"
+                            type="button" id="send-button">Enviar mensagem</button>                           
+                        </td>
                     </tr>
                 </table>          
             </form>
