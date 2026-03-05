@@ -21,9 +21,30 @@
             </table>
         </nav>
         <!-- conteúdo principal -->
-        <main>
-            <form class="centered" action="" method="">
-                <table class="centered">
+        <main class="container">
+            <h3 class="center">Contato</h3>
+            <form method="" action="" class="form">
+                <div class="row row-form">
+                    <label>Nome:</label>
+                    <input type="text" class="input" id="name-field" style="width: 100%;">
+                </div>
+                <div class="row row-form">
+                    <label>E-mail:</label>
+                    <input type="text" class="input" id="name-field" style="width: 100%;">
+                </div>
+                <div class="row row-form">
+                    <label>Mensagem:</label>
+                    <textarea rows="7" class="input" id="message-field"></textarea>
+                </div>
+                <div class="row row-form">
+                    <button class="link-button"
+                            type="button" id="send-button">Enviar mensagem</button>
+                </div>
+            </form>
+        </main>
+        <main class="centered">
+            <form action="" method="">
+                <table>
                     <tr>
                         <th colspan="2">
                             <h3>Contato</h3>
@@ -38,23 +59,20 @@
 
                     <tr>
                         <th><label>Nome: </label></th>
-                        <td><input class="input-field" type="text" id="name-field"
-                            style="width: 800px; padding: 5px;">
-                        </td>
+                        <td><input class="input-field" type="text" id="name-field"></td>
+                        <!-- style="width: 800px; padding: 5px;"> -->
                     </tr>
 
                     <tr>
                         <th><label>E-mail: </label></th>
-                        <td><input class="input-field" type="email" id="email-field"
-                            style="width: 800px; padding: 5px;">
-                        </td>
+                        <td><input class="input-field" type="email" id="email-field" ></td>
+                        <!-- style="width: 800px; padding: 5px;"> -->
                     </tr>
 
                     <tr>
                         <th><label>Mensagem: </label></th>
-                        <td><textarea class="input-field" id="message-field"
-                            style="width: 800px; height: 300px; padding: 5px;">
-                        </textarea></td>
+                        <td><textarea class="input-field" id="message-field"></textarea></td>
+                        <!-- style="width: 800px; height: 300px; padding: 5px;"> -->
                     </tr>
 
                     <tr>
